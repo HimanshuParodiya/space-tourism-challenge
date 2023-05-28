@@ -1,0 +1,158 @@
+.header_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(100% - 10%);
+  width: calc(100% - 10%);
+  margin: auto 0 auto auto;
+  height: 95px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1;
+  background: transparent;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.header_menu {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  height: 100%;
+  flex: 0.6;
+  position: relative;
+}
+
+.header_menu_ul {
+  padding: 0 30px 0px 70px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+li {
+  list-style: none;
+  display: inline;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  margin: 0 30px;
+  letter-spacing: 2.7px;
+}
+
+li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+li a span {
+  padding-right: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header_menu_li {
+  position: relative;
+}
+
+
+
+.header_menu_li .active {
+  border-bottom: 2px solid white;
+  padding-bottom: 34px;
+  color: #ffffff;
+  width: 100%;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 680px) {
+  .header_navbar {
+    width: 100vw;
+    padding: 0 25px;
+    height: 20px;
+  }
+  
+  .header_menu {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    transform: scale(1.6);
+  }
+  
+  nav{
+      position: relative;
+
+  }
+
+  .hamburger {
+    display: inline;
+    color: #ffffff;
+    z-index: 0;
+  }
+  
+  .sideMenu{
+    display: none;
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+    right: -60vw;
+    top: -50px;
+    backdrop-filter: blur(30px);
+  }
+  .sideMenu .side_menu_section{
+    margin-top: 15vh;
+  }
+  .sideMenu .side_menu_section .side_menu_ul .side_menu_li{ 
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+  }
+  .sideMenu .side_menu_section .side_menu_ul .side_menu_li a{ 
+    font-size: 18px;
+  }
+  .showMenu{
+    display: block;
+    transform: translateX(-60vw);
+}
+
+}
+
+@media only screen and (min-width: 681px) and (max-width: 788px) {
+  .header_navbar {
+    width: 100vw;
+    display: flex;
+  top: 0px;
+
+    
+  }
+  .header_logo {
+    padding-left: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+  
+
+  .header_menu_ul {
+    padding: 0px 0px 0px 0px;
+  }
+  .header_menu_ul li {
+    padding: 0px 0px;
+    text-transform: uppercase;
+    margin: 30px;
+    letter-spacing: 2.7px;
+  }
+
+  li a span {
+    display: none;
+  }
+ 
+}
