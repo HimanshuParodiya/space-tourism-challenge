@@ -1,4 +1,4 @@
-.container{
+.container {
     background: url("/assets/home/background-home-desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -6,10 +6,10 @@
     color: #FFFFFF;
     padding-top: 30vh;
     height: 100vh;
-    max-height: 100%;
+    min-height: 100%;
 }
 
-.main_section{
+.main_section {
     margin-top: 80px;
     display: flex;
     justify-content: space-around;
@@ -17,7 +17,8 @@
     flex-wrap: wrap;
 
 }
-.home_heading{
+
+.home_heading {
     font-size: 28px;
     letter-spacing: 4.72px;
     word-spacing: 1px;
@@ -25,13 +26,15 @@
     font-weight: 200;
     margin-bottom: 35px;
 }
-.home_hero_heading{
+
+.home_hero_heading {
     font-size: 130px;
     word-spacing: 1px;
     font-family: 'Bellefair', serif;
     margin-bottom: 10px;
 }
-.home_paragraph_section{
+
+.home_paragraph_section {
     font-size: 18px;
     line-height: 32px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -40,7 +43,7 @@
     font-weight: 300;
 }
 
-.explore_button{
+.explore_button {
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -54,16 +57,16 @@
     letter-spacing: 2px;
     line-height: 1;
     position: relative;
-    
-    
+
+
 }
 
-.right_section{
+.right_section {
     z-index: 0;
 
 }
 
-.explore_button:hover::after{ 
+.explore_button:hover::after {
     content: "";
     position: absolute;
     top: 0;
@@ -76,7 +79,8 @@
     z-index: -1;
     /* animation: fade 3s linear 1s infinite ; */
 }
-.explore_button:hover::before{ 
+
+.explore_button:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -90,14 +94,14 @@
     /* animation: fade 3s linear 1s infinite ; */
 }
 
-.right_section a{ 
+.right_section a {
     color: #0B0D17;
     text-decoration: none;
     user-select: none;
 }
 
-@keyframes innerFade{
-    100%{
+@keyframes innerFade {
+    100% {
         transform: scale(1.4);
         opacity: 0;
         background-color: #FFFFFF;
@@ -105,8 +109,8 @@
     }
 }
 
-@keyframes outerFade{
-    100%{
+@keyframes outerFade {
+    100% {
         transform: scale(1.2);
         opacity: 0;
         background-color: #FFFFFF;
@@ -117,72 +121,79 @@
 
 
 @media only screen and (max-width: 680px) {
-    .container{
+    .container {
         background: url("/assets/home/background-home-mobile.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 8vh;
         text-align: center;
-        height: 100vh;
-        max-height: 100%;
     }
-    .main_section{
+
+    .main_section {
         flex-direction: column;
     }
-    .home_heading{
+
+    .home_heading {
         font-size: 18px;
     }
-    .home_hero_heading{
+
+    .home_hero_heading {
         font-size: 100px;
     }
-    .home_paragraph_section{
+
+    .home_paragraph_section {
         font-size: 17px;
         line-height: 30px;
         margin-bottom: 80px;
     }
 
-    .explore_button{
+    .explore_button {
         height: 200px;
-    width: 200px;
-    font-size: 22px;
+        width: 200px;
+        font-size: 22px;
 
     }
 }
 
-@media only screen and (min-width:681px) and (max-width:768px){
-    .container{
+@media only screen and (min-width:681px) and (max-width:768px) {
+    .container {
         background: url("/assets/home/background-home-tablet.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 20vh;
-        height: 100vh;
-        max-height: 100%;
+        height: 100%;
+        min-height: 100%;
     }
-    .main_section{
+
+    .main_section {
         flex-direction: column;
         text-align: center;
     }
-    
-    .home_heading{
+
+    .home_heading {
         font-size: 22px;
     }
-    .home_hero_heading{
+
+    .home_hero_heading {
         font-size: 130px;
     }
-    .home_paragraph_section{
+
+    .home_paragraph_section {
         font-size: 17px;
         line-height: 30px;
         max-width: 25em;
         margin-bottom: 60px;
     }
-    .explore_button{
+
+    .explore_button {
         height: 250px;
-    width: 250px;
-    font-size: 32px;
+        width: 250px;
+        font-size: 32px;
     }
-    .right_section{
+
+    .right_section {
         padding-bottom: 30px;
     }
 }

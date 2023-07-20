@@ -31,7 +31,7 @@
 .destination_image {
   margin-top: 40px;
   height: 445px;
-  width: 445px; 
+  width: 445px;
 }
 
 .planet_menu {
@@ -45,6 +45,10 @@
   padding: 0;
 }
 
+.planet_menu_li .links {
+  color: white;
+}
+
 .planet_hero {
   font-size: 120px;
   word-spacing: 1px;
@@ -56,6 +60,7 @@
 .destination_image {
   animation: fadePlanetData 1.1s linear forwards;
 }
+
 .planet_hero {
   animation: fadePlanet 1s linear forwards;
 }
@@ -64,7 +69,8 @@
   animation: fadePlanet 1.1s linear forwards;
 }
 
-.distance_info, .time_info {
+.distance_info,
+.time_info {
   animation: fadePlanet 1.2s linear forwards;
 }
 
@@ -85,6 +91,7 @@
     transform: scale(0.5);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -112,6 +119,7 @@
   background-color: white;
   transition: 0.255s;
 }
+
 .planet_menu_li:hover::after {
   width: 100%;
   left: 0;
@@ -123,6 +131,7 @@
   margin-bottom: 90px;
   padding-left: 10px;
 }
+
 .planet_info p {
   max-width: 30rem;
   font-family: "Barlow Condensed", sans-serif;
@@ -188,6 +197,7 @@
     padding-top: 5vh;
     height: 100%;
   }
+
   .destination_heading {
     font-size: 22px;
   }
@@ -196,10 +206,12 @@
     font-size: 22px;
     letter-spacing: 2.7px;
   }
+
   .destination_image {
     height: 300px;
     width: 300px;
   }
+
   .destination_image img {
     height: 100%;
     width: 100%;
@@ -216,11 +228,13 @@
     margin-top: 20px;
     text-transform: uppercase;
   }
+
   .planet_info {
     position: relative;
     padding-left: 0px;
     margin-bottom: 90px;
   }
+
   .planet_info p {
     max-width: 25rem;
     font-size: 20px;
@@ -229,6 +243,7 @@
     color: #d0d6f9;
     font-weight: 300;
   }
+
   .distanceAndTime::after {
     content: " ";
     position: absolute;
@@ -237,7 +252,7 @@
     width: 100%;
     background-color: #979797;
   }
-  
+
   .distanceAndTime {
     flex-direction: column;
     justify-content: space-between;
@@ -259,25 +274,26 @@
     text-align: center;
     padding-top: 15vh;
     height: 100%;
-    
+
   }
+
   .destination_heading {
     font-size: 22px;
   }
+
   .planet_menu {
     justify-content: center;
     margin-top: 35px;
     font-size: 16px;
   }
-  
+
   .planet_info p {
     max-width: 35rem;
   }
+
   .distance_info {
     margin-bottom: 25px;
   }
-  .distanceAndTime {
-    border: 2px solid red;
 
-  }
+
 }
